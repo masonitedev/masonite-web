@@ -1,15 +1,20 @@
 # masonite.dev
 
-Sitio estático para [masonite.dev](https://masonite.dev), desplegado con GitHub Pages.
+Sitio estático para [masonite.dev](https://masonite.dev) — la web del framework **Masonite** ("The Blueprint Workshop"), desplegada con GitHub Pages.
+
+## Estructura
+
+- `index.html` — landing page (hero con sprite animado, pilares, DX showcase, scroll-build de la pirámide, grid de features, banda Masonite 5, CTA)
+- `changelog.html` — changelog: memorial de Joe Mancuso, mudanza a `masonitedev`, release 5.0 y guía de upgrade 4.x → 5.x
+- `styles.css` — sistema de diseño (paletas de marca via CSS variables, Sora + JetBrains Mono)
+- `sprites.js` — motor de sprites pixel-art procedurales en canvas (re-tematizables, respetan `prefers-reduced-motion`)
+- `app.js` — comportamiento compartido (nav, tabs de código, botones de copiar, accordion del footer, scroll reveal)
+
+Sin build step: HTML/CSS/JS estático puro. Cada push a `main` despliega.
 
 ## Deploy
 
-1. Crear el repo en GitHub y hacer push:
-
-   ```sh
-   git remote add origin git@github.com:<usuario>/masonite-web.git
-   git push -u origin main
-   ```
+1. Push a `main` (deploy automático vía Pages).
 
 2. En GitHub: **Settings → Pages → Build and deployment**
    - Source: *Deploy from a branch*

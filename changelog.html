@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="brand" data-font="sora">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Changelog — Masonite</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpolygon points='60,16 14,80 60,104' fill='%239C82F2'/%3E%3Cpolygon points='60,16 106,80 60,104' fill='%234A33A6'/%3E%3C/svg%3E" />
+<meta name="description" content="Masonite releases, migrations and project news." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="paper-bg" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<span class="reg tl" aria-hidden="true"></span><span class="reg tr" aria-hidden="true"></span>
+<span class="reg bl" aria-hidden="true"></span><span class="reg br" aria-hidden="true"></span>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce" role="region" aria-label="Announcement">
+  <div class="announce__inner">
+    <span><span class="rev">REV. 5.0</span> — Masonite 5 is here</span>
+    <a href="changelog.html">Read the changelog <span class="announce__arrow" aria-hidden="true">→</span></a>
+  </div>
+  <button class="announce__close" aria-label="Dismiss">✕</button>
+</div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html" aria-label="Masonite Framework home">
+      <svg class="brand__pyr" viewBox="0 0 120 120" aria-hidden="true"><polygon points="60,16 14,80 60,104" fill="var(--brand-vl)"/><polygon points="60,16 106,80 60,104" fill="var(--brand-vd)"/><line x1="60" y1="16" x2="60" y2="104" stroke="var(--brand-ridge)" stroke-width="2.5" opacity=".5"/></svg>
+      <span class="brand__vr"></span>
+      <span class="brand__wm"><span class="brand__name">Masonite</span><span class="brand__tag">FRAMEWORK</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="https://docs.masonite.dev">Docs</a>
+      <a href="index.html#features">Features</a>
+      <a href="changelog.html" class="active">Changelog</a>
+    </nav>
+    <div class="nav__spacer"></div>
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--sm" href="https://github.com/masonitedev/masonite">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+        <span class="nav__gh-text">GitHub</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="https://docs.masonite.dev/">Get started</a>
+    </div>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="nav__mobile"><div class="nav__mobile-inner">
+    <a href="https://docs.masonite.dev">Docs</a>
+    <a href="index.html#features">Features</a>
+    <a href="changelog.html">Changelog</a>
+    <a href="https://github.com/masonitedev/masonite">GitHub</a>
+    <a class="btn btn--primary" href="https://docs.masonite.dev/">Get started</a>
+  </div></div>
+</header>
+
+<main>
+<section class="section" style="padding-block: clamp(2rem,4vw,3.5rem) clamp(4rem,8vw,7rem);">
+  <div class="wrap cl-wrap">
+    <!-- Header -->
+    <div class="cl-head" data-rise>
+      <span class="fig"><b>SHEET 05</b> masonite.dev</span>
+      <h1>Changelog</h1>
+      <p class="lead">Releases, migrations and project news.</p>
+    </div>
+
+    <!-- In memoriam (quiet, no effects) -->
+    <div class="memorial">
+      <p class="memorial__eyebrow">In memoriam</p>
+      <h3>In memory of Joseph “Joe” Mancuso</h3>
+      <p>Masonite was created by Joseph “Joe” Mancuso, who passed away in November 2025. Joe built Masonite from the ground up and gave years of work, care and enthusiasm to the framework and its community — everything here exists because of him. The project now continues in his memory, carrying forward the developer-first spirit he gave it. Thank you for everything, Joe.</p>
+    </div>
+
+    <!-- Project news -->
+    <article class="cl-entry" data-rise>
+      <span class="fig"><b>NEWS</b> Project</span>
+      <h2>Masonite has a new home</h2>
+      <div class="prose">
+        <p>Following Joe's passing, the community has taken stewardship of the framework and moved active development to the new <strong><code>masonitedev</code></strong> organization on GitHub. The repository now lives at <a href="https://github.com/masonitedev/masonite">github.com/masonitedev/masonite</a> and the docs at <a href="https://docs.masonite.dev/">docs.masonite.dev</a>. The PyPI package was renamed from <code>masonite</code> to <strong><code>masonite-framework</code></strong>.</p>
+        <p>The original repository and the old <code>masonite</code> package (4.x and earlier) are now <strong>deprecated and will no longer receive updates or security fixes</strong> — all future development happens under masonitedev.</p>
+      </div>
+      <p class="pixel" style="font-size:9px;color:var(--muted);margin-top:22px;margin-bottom:8px;letter-spacing:.06em;">UPDATE YOUR GIT REMOTE</p>
+      <div class="codepanel cl-code">
+        <div class="codepanel__chrome"><div class="codepanel__dots"><i></i><i></i><i></i></div><span class="codepanel__fig">BASH</span></div>
+        <div class="codebody"><div class="codepane active">
+<pre data-copy="git remote set-url origin https://github.com/masonitedev/masonite.git"><code><span class="tok-prompt">$ </span><span class="tok-cmd">git</span> remote set-url origin https://github.com/masonitedev/masonite.git</code></pre>
+        </div></div>
+      </div>
+    </article>
+
+    <!-- Release 5.0 -->
+    <article class="cl-entry" data-rise>
+      <span class="fig"><b>REV. 5.0</b> Release</span>
+      <h2><span class="ver-badge">Masonite 5.0</span> <span class="ver-badge ver-badge--soft">latest 5.0.1</span></h2>
+      <ul class="rel-list">
+        <li><span class="marker"></span><div><b>New home &amp; package</b><span>Moved to the <code>masonitedev</code> GitHub org; install with <code>pip install masonite-framework</code>.</span></div></li>
+        <li><span class="marker"></span><div><b>New logging system</b><span>A full logging stack with <code>terminal</code>, <code>single</code>, <code>daily</code>, <code>stack</code>, <code>syslog</code> and <code>slack</code> drivers, configured in <code>config/logging.py</code> and exposed via the <code>Log</code> facade. Unhandled exceptions are now logged automatically with their full traceback.</span></div></li>
+        <li><span class="marker"></span><div><b>Updated runtime</b><span>Python 3.10–3.13 is now required (3.8 and 3.9 were dropped at end-of-life).</span></div></li>
+        <li><span class="marker"></span><div><b>Updated core dependencies</b><span>Masonite ORM 3.x and Pendulum 3.x are now required. The ORM is published as <code>masonite-framework-orm</code> (replacing <code>masonite-orm</code>); imports are unchanged (<code>from masoniteorm...</code>).</span></div></li>
+      </ul>
+    </article>
+
+    <!-- Upgrade guide -->
+    <article class="cl-entry" data-rise>
+      <span class="fig"><b>GUIDE</b> Migration</span>
+      <h2>Upgrading from 4.x to 5.x</h2>
+      <ol class="upgrade-steps">
+        <li>
+          <div class="ustep-body">Swap the package:</div>
+          <div class="codepanel cl-code">
+            <div class="codepanel__chrome"><div class="codepanel__dots"><i></i><i></i><i></i></div><span class="codepanel__fig">BASH</span></div>
+            <div class="codebody"><div class="codepane active">
+<pre data-copy='pip uninstall masonite
+pip install "masonite-framework>=5,<6"'><code><span class="tok-prompt">$ </span><span class="tok-cmd">pip</span> uninstall masonite
+<span class="tok-prompt">$ </span><span class="tok-cmd">pip</span> install <span class="tok-str">"masonite-framework>=5,&lt;6"</span></code></pre>
+            </div></div>
+          </div>
+        </li>
+        <li><div class="ustep-body"><strong>Imports are unchanged</strong> — keep using <code>import masonite</code> / <code>from masonite import ...</code>; the <code>project</code> and <code>craft</code> commands work the same way.</div></li>
+        <li><div class="ustep-body">Make sure you're on <strong>Python 3.10–3.13</strong>.</div></li>
+        <li><div class="ustep-body"><strong>Pendulum 3</strong> parses dates more strictly — review your date parsing. In tests, replace <code>pendulum.set_test_now()</code> with <code>pendulum.travel_to()</code> or the built-in <code>self.fakeTime()</code> helper.</div></li>
+        <li><div class="ustep-body">Update your git remote (see command above).</div></li>
+      </ol>
+      <div class="callout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <p>Need the full picture? <a href="https://docs.masonite.dev/upgrade-guide/masonite-4.0-to-5.0/">Read the full upgrade guide →</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__legend">
+      <span>SHEET — MASONITE.DEV</span>
+      <span>REV. 5.0 · © 2026 · MIT</span>
+    </div>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Masonite Framework home">
+      <svg class="brand__pyr" viewBox="0 0 120 120" aria-hidden="true"><polygon points="60,16 14,80 60,104" fill="var(--brand-vl)"/><polygon points="60,16 106,80 60,104" fill="var(--brand-vd)"/><line x1="60" y1="16" x2="60" y2="104" stroke="var(--brand-ridge)" stroke-width="2.5" opacity=".5"/></svg>
+      <span class="brand__vr"></span>
+      <span class="brand__wm"><span class="brand__name">Masonite</span><span class="brand__tag">FRAMEWORK</span></span>
+    </a>
+        <p>A batteries-included Python web framework. We laid the foundation — you craft the app.</p>
+        <div class="footer__social">
+          <a href="https://github.com/masonitedev/masonite" aria-label="GitHub"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+          <a href="https://pypi.org/project/masonite-framework/" aria-label="PyPI"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></a>
+          <a href="https://docs.masonite.dev/" aria-label="Documentation"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></a>
+        </div>
+      </div>
+      <div class="fcol">
+        <button class="fcol__head" aria-expanded="true">Getting Started <span class="fcol__chev" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <ul class="fcol__links">
+          <li><a href="https://docs.masonite.dev/">Installation</a></li>
+          <li><a href="https://docs.masonite.dev/prologue/create-a-blog/">Creating a Blog</a></li>
+          <li><a href="https://docs.masonite.dev/prologue/release-cycle/">Release Cycle</a></li>
+          <li><a href="https://docs.masonite.dev/upgrade-guide/masonite-4.0-to-5.0/">Upgrade 4.0 → 5.0</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <button class="fcol__head" aria-expanded="false">The Basics <span class="fcol__chev" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <ul class="fcol__links">
+          <li><a href="https://docs.masonite.dev/features/routing/">Routing</a></li>
+          <li><a href="https://docs.masonite.dev/features/controllers/">Controllers</a></li>
+          <li><a href="https://docs.masonite.dev/features/middleware/">Middleware</a></li>
+          <li><a href="https://docs.masonite.dev/features/views/">Views</a></li>
+          <li><a href="https://docs.masonite.dev/features/request/">Request</a></li>
+          <li><a href="https://docs.masonite.dev/features/response/">Response</a></li>
+          <li><a href="https://docs.masonite.dev/features/configuration/">Configuration</a></li>
+          <li><a href="https://docs.masonite.dev/features/error-handling/">Error Handling</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <button class="fcol__head" aria-expanded="false">Features <span class="fcol__chev" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <ul class="fcol__links">
+          <li><a href="https://github.com/masonitedev/orm">Masonite ORM</a></li>
+          <li><a href="https://docs.masonite.dev/features/authentication/">Authentication</a></li>
+          <li><a href="https://docs.masonite.dev/features/queues/">Queues &amp; Jobs</a></li>
+          <li><a href="https://docs.masonite.dev/features/scheduling/">Task Scheduling</a></li>
+          <li><a href="https://docs.masonite.dev/features/mail/">Mail</a></li>
+          <li><a href="https://docs.masonite.dev/features/notifications/">Notifications</a></li>
+          <li><a href="https://docs.masonite.dev/features/events/">Events</a></li>
+          <li><a href="https://docs.masonite.dev/features/facades/">Facades</a></li>
+          <li><a href="https://docs.masonite.dev/features/validation/">Validation</a></li>
+          <li><a href="https://docs.masonite.dev/features/tinker/">Tinker (REPL)</a></li>
+          <li><a href="https://docs.masonite.dev/features/logging/">Logging</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <button class="fcol__head" aria-expanded="false">Arch. &amp; Testing <span class="fcol__chev" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <ul class="fcol__links">
+          <li><a href="https://docs.masonite.dev/architecture/service-providers/">Service Providers</a></li>
+          <li><a href="https://docs.masonite.dev/architecture/service-container/">Service Container</a></li>
+          <li><a href="https://docs.masonite.dev/testing/getting-started/">Testing: Start</a></li>
+          <li><a href="https://docs.masonite.dev/testing/mocking/">Mocking</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <button class="fcol__head" aria-expanded="false">Community <span class="fcol__chev" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <ul class="fcol__links">
+          <li><a href="https://github.com/masonitedev/masonite">GitHub</a></li>
+          <li><a href="https://pypi.org/project/masonite-framework/">PyPI</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+          <li><a href="https://docs.masonite.dev/prologue/contributing-guide/">Contributing</a></li>
+          <li><a href="https://docs.masonite.dev/">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="copy"><b>Masonite</b> &nbsp;·&nbsp; © 2026 Masonite · MIT Licensed</span>
+      <span class="memorial-line">Maintained by the community in memory of Joe Mancuso.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="sprites.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
