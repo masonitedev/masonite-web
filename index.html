@@ -181,8 +181,8 @@ users <span class="tok-punc">=</span> <span class="tok-fn">User</span><span clas
         <h2 class="section-head" style="margin-bottom:0; font-size: clamp(2rem,4vw,3rem);">Four commands. One running server.</h2>
         <div class="buildsteps">
           <div class="buildstep done" data-rise><span class="buildstep__n">1</span><div><code>pip install masonite-framework</code><span class="label">INSTALL</span></div></div>
-          <div class="buildstep" data-rise><span class="buildstep__n">2</span><div><code>project start .</code><span class="label">CREATE PROJECT</span></div></div>
-          <div class="buildstep" data-rise><span class="buildstep__n">3</span><div><code>project install</code><span class="label">INSTALL DEPS</span></div></div>
+          <div class="buildstep" data-rise><span class="buildstep__n">2</span><div><code>masonite new blog</code><span class="label">CREATE PROJECT</span></div></div>
+          <div class="buildstep" data-rise><span class="buildstep__n">3</span><div><code>cd blog</code><span class="label">ENTER PROJECT</span></div></div>
           <div class="buildstep" data-rise><span class="buildstep__n">4</span><div><code>python craft serve</code><span class="label">RUN DEV SERVER</span></div></div>
         </div>
         <a class="read-more" data-rise href="https://docs.masonite.dev/">Read the full guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -227,16 +227,16 @@ users <span class="tok-punc">=</span> <span class="tok-fn">User</span><span clas
   <div class="wrap">
     <div class="band__grid">
       <div data-rise>
-        <span class="fig"><b>REV. 5.0</b> What's new in 5.0</span>
-        <h2 style="margin-top:16px;">A new logging system, a modern runtime, a new home.</h2>
+        <span class="fig"><b>REV. 5.1</b> What's new in Masonite 5</span>
+        <h2 style="margin-top:16px;">A project wizard, a new logging system, a new home.</h2>
         <p class="lead">Masonite 5 ships the biggest changes since 4.0 — and moves the whole project to masonite.dev.</p>
         <a class="read-more" data-rise href="changelog.html">Read the changelog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="band__chips">
+        <div class="m5chip" data-rise><div class="pixel m5chip__k">WIZARD</div><b>Project wizard</b><span><code>masonite new</code>: pick a stack &amp; database, get a venv, deps, key and git — instantly, offline.</span></div>
         <div class="m5chip" data-rise><div class="pixel m5chip__k">LOG.SYS</div><b>New logging system</b><span><code>Log</code> facade: terminal, single, daily, stack, syslog &amp; slack drivers.</span></div>
         <div class="m5chip" data-rise><div class="pixel m5chip__k">RUNTIME</div><b>Python 3.10–3.13</b><span>A modern, supported runtime across the board.</span></div>
         <div class="m5chip" data-rise><div class="pixel m5chip__k">ORM 3.X</div><b>Masonite ORM 3.x</b><span>Updated core dependencies, including Pendulum 3.</span></div>
-        <div class="m5chip" data-rise><div class="pixel m5chip__k">PKG</div><b>New package</b><span>Install with <code>pip install masonite-framework</code>.</span></div>
       </div>
     </div>
   </div>

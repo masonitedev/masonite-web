@@ -91,10 +91,31 @@
       </div>
     </article>
 
+    <!-- Release 5.1 -->
+    <article class="cl-entry" data-rise>
+      <span class="fig"><b>REV. 5.1</b> Release</span>
+      <h2><span class="ver-badge">Masonite 5.1</span> <span class="ver-badge ver-badge--soft">latest 5.1.0</span></h2>
+      <ul class="rel-list">
+        <li><span class="marker"></span><div><b>New <code>masonite new</code> wizard</b><span>An interactive, Laravel-style project wizard with arrow-key menus — pick a stack (full-stack or API), a frontend preset and a database, and it creates the virtual environment, installs the dependencies, generates the <code>APP_KEY</code>, initializes git and offers to start the dev server. Every step is also a flag (<code>masonite new blog --api --db=postgres --no-input</code>), and <code>project start</code> keeps working as an alias.</span></div></li>
+        <li><span class="marker"></span><div><b>Bundled starter skeleton</b><span>The starter project now ships inside the package, so creating a project is instant, works offline and no longer depends on the cookie-cutter GitHub repository. <code>--repo</code>, <code>--branch</code> and <code>--release</code> still download custom templates.</span></div></li>
+        <li><span class="marker"></span><div><b>New welcome page</b><span>A welcome page following the Great Pyramid brand — light/dark via <code>prefers-color-scheme</code>, self-contained CSS — plus matching 403/404/500 and maintenance pages.</span></div></li>
+        <li><span class="marker"></span><div><b>New <code>masonite</code> console script</b><span>Available alongside <code>project</code>.</span></div></li>
+      </ul>
+      <p class="pixel" style="font-size:9px;color:var(--muted);margin-top:22px;margin-bottom:8px;letter-spacing:.06em;">CREATE A PROJECT</p>
+      <div class="codepanel cl-code">
+        <div class="codepanel__chrome"><div class="codepanel__dots"><i></i><i></i><i></i></div><span class="codepanel__fig">BASH</span></div>
+        <div class="codebody"><div class="codepane active">
+<pre data-copy='pip install masonite-framework
+masonite new blog'><code><span class="tok-prompt">$ </span><span class="tok-cmd">pip</span> install masonite-framework
+<span class="tok-prompt">$ </span><span class="tok-cmd">masonite</span> new blog</code></pre>
+        </div></div>
+      </div>
+    </article>
+
     <!-- Release 5.0 -->
     <article class="cl-entry" data-rise>
       <span class="fig"><b>REV. 5.0</b> Release</span>
-      <h2><span class="ver-badge">Masonite 5.0</span> <span class="ver-badge ver-badge--soft">latest 5.0.1</span></h2>
+      <h2><span class="ver-badge">Masonite 5.0</span></h2>
       <ul class="rel-list">
         <li><span class="marker"></span><div><b>New home &amp; package</b><span>Moved to the <code>masonitedev</code> GitHub org; install with <code>pip install masonite-framework</code>.</span></div></li>
         <li><span class="marker"></span><div><b>New logging system</b><span>A full logging stack with <code>terminal</code>, <code>single</code>, <code>daily</code>, <code>stack</code>, <code>syslog</code> and <code>slack</code> drivers, configured in <code>config/logging.py</code> and exposed via the <code>Log</code> facade. Unhandled exceptions are now logged automatically with their full traceback.</span></div></li>
