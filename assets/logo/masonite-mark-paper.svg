@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Masonite mark on brand paper background — for avatars/social where transparency renders poorly -->
+  <rect width="120" height="120" fill="#FBFAF8"/>
+  <polygon points="60,16 14,80 60,104" fill="#9C82F2"/>
+  <polygon points="60,16 106,80 60,104" fill="#4A33A6"/>
+  <line x1="60" y1="16" x2="60" y2="104" stroke="#C9BBFF" stroke-width="2.5" opacity=".5"/>
+</svg>
